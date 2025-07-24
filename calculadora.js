@@ -71,22 +71,19 @@ function calculate(value) {
             return;
         } else {
             display.value = result;
-            A = result.toString(); // Update A to the result for chaining
+            A = result.toString(); 
         }
     } else {
-        // If no operator yet, just store current display as A
         A = display.value;
     }
 
     if (value === "=") {
-        // When equals pressed, show final expression and clear operator to stop chaining
         expression += ` ${B} =`;
         expressionDisplay.textContent = expression;
         operator = null;
         expression = "";
         shouldResetDisplay = true;
     } else {
-        // Store new operator and prepare for next input
         if (expression === "") {
             expression = A + ` ${value}`;
         } else {
