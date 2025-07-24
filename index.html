@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div id="calculator">
+        <div id="expressionDisplay"></div>
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="handleInput('+')" class="operator-btn">+</button>
+            <button onclick="handleInput('7')">7</button>
+            <button onclick="handleInput('8')">8</button>
+            <button onclick="handleInput('9')">9</button>
+            <button onclick="handleInput('-')" class="operator-btn">-</button>
+            <button onclick="handleInput('4')">4</button>
+            <button onclick="handleInput('5')">5</button>
+            <button onclick="handleInput('6')">6</button>
+            <button onclick="handleInput('*')" class="operator-btn">*</button>
+            <button onclick="handleInput('1')">1</button>
+            <button onclick="handleInput('2')">2</button>
+            <button onclick="handleInput('3')">3</button>
+            <button onclick="handleInput('/')" class="operator-btn">/</button>
+            <button onclick="handleInput('0')">0</button>
+            <button onclick="handleInput('.')">.</button>
+            <button onclick="handleInput('=')">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+
+        </div>
+
+    </div>
+    <script src="calculadora.js"></script>
+    
+</body>
+</html>
